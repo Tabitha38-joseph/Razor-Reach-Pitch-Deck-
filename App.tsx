@@ -32,7 +32,6 @@ import {
 } from 'lucide-react';
 import { SavingsChart } from './components/SavingsChart';
 import { ClampDemo } from './components/ClampDemo';
-import { ComparisonData } from './types';
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -41,8 +40,8 @@ function App() {
   const [frequency, setFrequency] = useState(2); // Shaves per month
 
   // Derived calculations for the chart
-  const calculateData = (): ComparisonData[] => {
-    const data: ComparisonData[] = [];
+  const calculateData = () => {
+    const data = [];
     // A $30 pack typically contains about 4 full head replacements (approx $7.50/head)
     const competitorBladeCost = refillCost / 4; 
     const universalBladeCost = 2.50; // Standard store blade cost
@@ -81,7 +80,7 @@ function App() {
     { id: 'business', label: 'Invest' },
   ];
 
-  const scrollToSection = (id: string) => {
+  const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });

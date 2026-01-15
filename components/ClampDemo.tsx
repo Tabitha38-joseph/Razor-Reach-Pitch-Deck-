@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowDown, GripHorizontal, MousePointerClick, RotateCcw, Maximize2, Minimize2 } from 'lucide-react';
 
-export const ClampDemo: React.FC = () => {
+export const ClampDemo = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hasRazor, setHasRazor] = useState(false);
   const [isExtended, setIsExtended] = useState(false);

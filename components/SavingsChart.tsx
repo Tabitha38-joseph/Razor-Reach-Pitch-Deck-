@@ -9,13 +9,8 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
-import { ComparisonData } from '../types';
 
-interface SavingsChartProps {
-  data: ComparisonData[];
-}
-
-export const SavingsChart: React.FC<SavingsChartProps> = ({ data }) => {
+export const SavingsChart = ({ data }) => {
   return (
     <div className="h-full w-full flex flex-col">
       <h3 className="text-slate-400 text-xs font-bold uppercase tracking-wider mb-4 text-center">

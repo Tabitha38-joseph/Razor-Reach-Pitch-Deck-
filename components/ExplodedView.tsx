@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ExplodedView: React.FC = () => {
+export const ExplodedView = () => {
   return (
     <div className="w-full bg-slate-900 rounded-xl border border-slate-700 p-8 shadow-2xl overflow-hidden relative">
       <div className="absolute top-4 right-4 text-xs font-mono text-blue-400 border border-blue-400 px-2 py-1 rounded opacity-50">
